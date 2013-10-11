@@ -1,0 +1,13 @@
+#meny {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background: red;
+}
+
+#karta {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background: blue;
+}
