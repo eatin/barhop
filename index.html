@@ -1,38 +1,31 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-	<meta charset="UTF-8">
+	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>BarHop.se </title>
-
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<title>BarHop.se</title>
+	
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 	<link rel="stylesheet" href="css/style.css">
+	<link href='http://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.css' rel='stylesheet' />
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="../../assets/js/html5shiv.js"></script>
-      <script src="../../assets/js/respond.min.js"></script>
-    <![endif]-->
 </head>
 <body>
-	<!-- MENU WRAPPER -->	
+	
 	<div id="meny">
 		
 	</div>
-	<!-- END MANU WRAPPER -->
+	<div id="map" class="dark"></div>
 	
-	<!-- MAP WRAPPER -->
-	<div id="karta">
-		
-	</div>
-	<!-- END MAP WRAPPER -->
-
-
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src='http://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.js'></script>
+	<script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+	
+	<script type='text/javascript'>
+		var map = L.mapbox.map('map', 'examples.map-y7l23tes')
+		.setView([59.314838, 18.069763], 15);
+	</script>
+
 </body>
 </html>
